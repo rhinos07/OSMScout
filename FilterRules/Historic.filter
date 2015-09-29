@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<osm_object_filter desc="Ein Beispiel">
+    <rule name="Historisches" target="node">
+      <!-- IconNode / node, IconWay / way, IconArea / area and IconRelation / relation -->
+      <!-- (tag_name=* or tag_name=tag_value) -->
+      <selector>historic=*</selector>
+      <!--     *  Polyline: draws a polyline
+    * Polygon: draws a closed polygon
+    * Text: draws a text
+    * Symbol: draws a simple symbol or a series of symbols along a polyline
+    * Icon: draws an icon
+    * Dot -->
+        <template type="dot" />
+        <template type="text" tag="name"/>
+        <template type="text" tag="description"/>
+      <options></options>
+      <comment></comment>
+    </rule>
+</osm_object_filter>

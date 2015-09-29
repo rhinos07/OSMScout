@@ -1,0 +1,1337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.36" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">c:\program files\microsoft fxcop 1.36\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="de-DE" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/OpenStreetMap Scout (Forms)/bin/Debug/OpenStreetMap Scout.exe" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/OpenStreetMap Scout (Forms)/bin/Debug/OpenStreetMapApi.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.36">
+  <Targets>
+   <Target Name="$(ProjectDir)/OpenStreetMap Scout (Forms)/bin/Debug/OpenStreetMap Scout.exe">
+    <Modules>
+     <Module Name="openstreetmap scout.exe">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-10-22 16:54:55Z">
+        <Issue Name="NoStrongName">
+         <Item>'OpenStreetMap Scout.exe'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-10-22 16:54:55Z">
+        <Issue>
+         <Item>'OpenStreetMap Scout.exe'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="OpenSteetMapApi">
+        <Types>
+         <Type Name="CalculatorTest">
+          <Members>
+           <Member Name="#TestGetCountTiles()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-10-22 16:54:55Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'CalculatorTest.TestGetCountTiles()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#TestGetLonLat()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-10-22 16:54:55Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'CalculatorTest.TestGetLonLat()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#TestGetTiles()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-10-22 16:54:55Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'CalculatorTest.TestGetTiles()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#TestGetTilesDoubleValue()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-10-22 16:54:55Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'CalculatorTest.TestGetTilesDoubleValue()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="CoordinateTest">
+          <Members>
+           <Member Name="#TestLatitude()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-10-22 16:54:55Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'CoordinateTest.TestLatitude()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#TestLongitude()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-10-22 16:54:55Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'CoordinateTest.TestLongitude()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="OpenStreetMapPictures">
+        <Types>
+         <Type Name="DownloadSettings">
+          <Members>
+           <Member Name="#PossibleRenderers">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'DownloadSettings.PossibleRenderers'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'List&lt;Renderer&gt;'</Item>
+               <Item>'DownloadSettings.PossibleRenderers'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FormEnterCoordinate">
+          <Members>
+           <Member Name="#InitializeComponent()">
+            <Messages>
+             <Message Id="System.Windows.Forms.Binding.#ctor(System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode,System.Object,System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Binding.Binding(string, object, string, bool, DataSourceUpdateMode, object, string)'</Item>
+               <Item>'FormEnterCoordinate.InitializeComponent()'</Item>
+               <Item>'Binding.Binding(string, object, string, bool, DataSourceUpdateMode, object, string, IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'Binding.Binding(string, object, string, bool, DataSourceUpdateMode, object, string)'</Item>
+               <Item>'FormEnterCoordinate.InitializeComponent()'</Item>
+               <Item>'Binding.Binding(string, object, string, bool, DataSourceUpdateMode, object, string, IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'Binding.Binding(string, object, string, bool, DataSourceUpdateMode, object, string)'</Item>
+               <Item>'FormEnterCoordinate.InitializeComponent()'</Item>
+               <Item>'Binding.Binding(string, object, string, bool, DataSourceUpdateMode, object, string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FormSlippyMap">
+          <Members>
+           <Member Name="#.ctor()">
+            <Messages>
+             <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Convert.ToInt32(string)'</Item>
+               <Item>'FormSlippyMap.FormSlippyMap()'</Item>
+               <Item>'Convert.ToInt32(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#clearOldCachedFiles()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'FormSlippyMap.clearOldCachedFiles()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Issue>
+               <Item>'FormSlippyMap.clearOldCachedFiles()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CloseMenuItem_Click(System.Object,System.EventArgs)">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'FormSlippyMap.CloseMenuItem_Click(object, EventArgs)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UpdateStatusBar()">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'FormSlippyMap.UpdateStatusBar()'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="MapControl">
+          <Members>
+           <Member Name="#AddOnlineRelationLayer()">
+            <Messages>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.AddOnlineRelationLayer()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Changed">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.Changed'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ExportAsPng(System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 17:10:52Z">
+              <Issue>
+               <Item>'MapControl.ExportAsPng(string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.ExportAsPng(string)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'MapControl.ExportAsPng(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetOsmRelationOnline()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.GetOsmRelationOnline()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.GetOsmRelationOnline()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#MapLoader">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotBeWriteOnly" Category="Microsoft.Design" CheckId="CA1044" Created="2008-10-22 16:54:55Z">
+              <Issue Name="AddGetter">
+               <Item>'MapControl.MapLoader'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#PaintMap(System.Drawing.Graphics)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.PaintMap(Graphics)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToolStripMenuItemAddGpxLayer_Click(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.ToolStripMenuItemAddGpxLayer_Click(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.ToolStripMenuItemAddGpxLayer_Click(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToolStripMenuItemAddOsmLayer_Click(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.ToolStripMenuItemAddOsmLayer_Click(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToolStripMenuItemImportOsmDump_Click(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.ToolStripMenuItemImportOsmDump_Click(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'MapControl.ToolStripMenuItemImportOsmDump_Click(object, EventArgs)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'MapControl.ToolStripMenuItemImportOsmDump_Click(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="MapControl+MapChangedDelegate">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Created="2008-10-22 16:54:55Z">
+            <Issue>
+             <Item>'MapControl.MapChangedDelegate'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="Renderer">
+          <Members>
+           <Member Name="#.ctor(System.String,System.String)">
+            <Messages>
+             <Message Id="1#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'url'</Item>
+               <Item>'Renderer.Renderer(string, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Url">
+            <Messages>
+             <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Renderer.Url'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Utils">
+          <Members>
+           <Member Name="#GetXPath(System.Int32,System.Int32,System.String)">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'Utils.GetXPath(int, int, string)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'Utils.GetXPath(int, int, string)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetYPath(System.String,System.Int32)">
+            <Messages>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'Utils.GetYPath(string, int)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'Utils.GetYPath(string, int)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetZoompath(System.Int32,System.String)">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'Utils.GetZoompath(int, string)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="OpenStreetMapPictures.TilesDownload">
+        <Types>
+         <Type Name="Calculator">
+          <Members>
+           <Member Name="#GetLonLat(System.Double,System.Double,System.Int32)">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'Calculator.GetLonLat(double, double, int)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'Calculator.GetLonLat(double, double, int)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetLonLat(System.Int32,System.Int32,System.Int32)">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'Calculator.GetLonLat(int, int, int)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'Calculator.GetLonLat(int, int, int)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetTiles(OpenSteetMapApi.Coordinate,System.Int32,System.Int32&amp;,System.Int32&amp;)">
+            <Messages>
+             <Message Id="2#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Created="2008-10-22 16:54:55Z">
+              <Issue Certainty="50">
+               <Item>'xtile'</Item>
+              </Issue>
+             </Message>
+             <Message Id="3#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Created="2008-10-22 16:54:55Z">
+              <Issue Certainty="50">
+               <Item>'ytile'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetTilesDoubleValue(OpenSteetMapApi.Coordinate,System.Int32,System.Double&amp;,System.Double&amp;)">
+            <Messages>
+             <Message Id="2#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Created="2008-10-22 16:54:55Z">
+              <Issue Certainty="50">
+               <Item>'xtile'</Item>
+              </Issue>
+             </Message>
+             <Message Id="3#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Created="2008-10-22 16:54:55Z">
+              <Issue Certainty="50">
+               <Item>'ytile'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="DownloadImage">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Int32,System.Int32,System.Int32)">
+            <Messages>
+             <Message Id="u" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'DownloadImage.DownloadImage(string, int, int, int)'</Item>
+               <Item>'u'</Item>
+              </Issue>
+             </Message>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'DownloadImage.DownloadImage(string, int, int, int)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'DownloadImage.DownloadImage(string, int, int, int)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+             <Message Id="z" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'DownloadImage.DownloadImage(string, int, int, int)'</Item>
+               <Item>'z'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Url">
+            <Messages>
+             <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'DownloadImage.Url'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#X">
+            <Messages>
+             <Message Id="X" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberMoreMeaningfulName">
+               <Item>'DownloadImage.X'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Y">
+            <Messages>
+             <Message Id="Y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberMoreMeaningfulName">
+               <Item>'DownloadImage.Y'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Z">
+            <Messages>
+             <Message Id="Z" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberMoreMeaningfulName">
+               <Item>'DownloadImage.Z'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="DownloadTilesImpl">
+          <Members>
+           <Member Name="#DownloadImage(OpenStreetMapPictures.TilesDownload.DownloadImage)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'DownloadTilesImpl.DownloadImage(DownloadImage)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Issue>
+               <Item>'DownloadTilesImpl.DownloadImage(DownloadImage)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Issue>
+               <Item>'DownloadTilesImpl.DownloadImage(DownloadImage)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DownloadImages()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'DownloadTilesImpl.DownloadImages()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Issue>
+               <Item>'DownloadTilesImpl.DownloadImages()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="Body" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Created="2008-10-22 16:54:55Z">
+              <Issue Name="Body">
+               <Item>'DownloadTilesImpl.DownloadImages()'</Item>
+               <Item>'DownloadImage[,]'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetTilesUrl(System.Int32,System.Int32,System.Int32)">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'DownloadTilesImpl.GetTilesUrl(int, int, int)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'DownloadTilesImpl.GetTilesUrl(int, int, int)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'DownloadTilesImpl.GetTilesUrl(int, int, int)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#KillAllThreads()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'DownloadTilesImpl.KillAllThreads()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#StartDownload()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'DownloadTilesImpl.StartDownload()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ExternalUpdateTileDelegate">
+          <Messages>
+           <Message TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003" Created="2008-10-22 16:54:55Z">
+            <Issue>
+             <Item>'ExternalUpdateTileDelegate'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="FinishedCacheLoadingDelegate">
+          <Messages>
+           <Message TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003" Created="2008-10-22 16:54:55Z">
+            <Issue>
+             <Item>'FinishedCacheLoadingDelegate'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="IDownloadTiles">
+          <Members>
+           <Member Name="#Initialize(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'IDownloadTiles.Initialize(int, int, int, bool)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-22 16:54:55Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'IDownloadTiles.Initialize(int, int, int, bool)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="OpenStreetMapScout.SlippyMap">
+        <Types>
+         <Type Name="FilterHandler">
+          <Members>
+           <Member Name="#ApplyFilter(OpenStreetMapScout.SlippyMap.OsmObjectFilter,OpenSteetMapApi.OsmTree)">
+            <Messages>
+             <Message Id="System.String.IndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'FilterHandler.ApplyFilter(OsmObjectFilter, OsmTree)'</Item>
+               <Item>'string.IndexOf(string)'</Item>
+               <Item>'string.IndexOf(string, StringComparison)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'FilterHandler.ApplyFilter(OsmObjectFilter, OsmTree)'</Item>
+               <Item>'string.IndexOf(string)'</Item>
+               <Item>'string.IndexOf(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FilterRule">
+          <Members>
+           <Member Name="#Templates">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'FilterRule.Templates'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FormObjectDetails">
+          <Members>
+           <Member Name="#ParseObject()">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'FormObjectDetails.ParseObject()'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FormSelectRelation">
+          <Members>
+           <Member Name="#GetId(System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'FormSelectRelation.GetId(string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Convert.ToInt32(string)'</Item>
+               <Item>'FormSelectRelation.GetId(string)'</Item>
+               <Item>'Convert.ToInt32(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.IndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'FormSelectRelation.GetId(string)'</Item>
+               <Item>'string.IndexOf(string)'</Item>
+               <Item>'string.IndexOf(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.LastIndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'FormSelectRelation.GetId(string)'</Item>
+               <Item>'string.LastIndexOf(string)'</Item>
+               <Item>'string.LastIndexOf(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Relations">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotBeWriteOnly" Category="Microsoft.Design" CheckId="CA1044" Created="2008-10-22 16:54:55Z">
+              <Issue Name="AddGetter">
+               <Item>'FormSelectRelation.Relations'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'FormSelectRelation.Relations'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SelectRelation_Load(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'FormSelectRelation.SelectRelation_Load(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'FormSelectRelation.SelectRelation_Load(object, EventArgs)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'FormSelectRelation.SelectRelation_Load(object, EventArgs)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'FormSelectRelation.SelectRelation_Load(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="GpxLayer">
+          <Messages>
+           <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Created="2008-10-22 16:54:55Z" FixCategory="NonBreaking">
+            <Issue Name="NonBreaking">
+             <Item>'GpxLayer'</Item>
+             <Item>'Pen'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="OsmLayer">
+          <Members>
+           <Member Name="#DrawIcon(System.Drawing.Graphics,System.String,System.Drawing.Point)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'OsmLayer.DrawIcon(Graphics, string, Point)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="OsmObjectFilter">
+          <Members>
+           <Member Name="#Rules">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'OsmObjectFilter.Rules'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="OsmRelationLayer">
+          <Messages>
+           <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Created="2008-10-22 16:54:55Z" FixCategory="NonBreaking">
+            <Issue Name="NonBreaking">
+             <Item>'OsmRelationLayer'</Item>
+             <Item>'Pen'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#GetDesc(OpenSteetMapApi.Relation)">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'OsmRelationLayer.GetDesc(Relation)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ThreadGetData">
+          <Members>
+           <Member Name="#.ctor(OpenStreetMapScout.SlippyMap.GetDataFinishedCallback)">
+            <Messages>
+             <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'ThreadGetData.ThreadGetData(GetDataFinishedCallback)'</Item>
+               <Item>'ThreadGetData.Layer'</Item>
+               <Item>'ILayer'</Item>
+               <Item>null</Item>
+              </Issue>
+              <Issue>
+               <Item>'ThreadGetData.ThreadGetData(GetDataFinishedCallback)'</Item>
+               <Item>'ThreadGetData.running'</Item>
+               <Item>'bool'</Item>
+               <Item>false</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ThreadProc()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'ThreadGetData.ThreadProc()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Issue>
+               <Item>'ThreadGetData.ThreadProc()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'ThreadGetData.ThreadProc()'</Item>
+              </Issue>
+              <Issue>
+               <Item>'ThreadGetData.ThreadProc()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/OpenStreetMap Scout (Forms)/bin/Debug/OpenStreetMapApi.dll">
+    <Modules>
+     <Module Name="openstreetmapapi.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-10-22 16:54:55Z">
+        <Issue Name="NoStrongName">
+         <Item>'OpenStreetMapApi.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-10-22 16:54:55Z">
+        <Issue>
+         <Item>'OpenStreetMapApi.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="OpenSteetMapApi">
+        <Types>
+         <Type Name="GpxTrack">
+          <Members>
+           <Member Name="#TrackSegments">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'GpxTrack.TrackSegments'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="GpxTrackSegment">
+          <Members>
+           <Member Name="#TrackPoints">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'GpxTrackSegment.TrackPoints'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="GpxTree">
+          <Members>
+           <Member Name="#creator">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'GpxTree.creator'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#tracks">
+            <Messages>
+             <Message Id="tracks" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-22 16:54:55Z">
+              <Issue Name="Member">
+               <Item>tracks</Item>
+               <Item>'GpxTree.tracks'</Item>
+               <Item>Tracks</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'GpxTree.tracks'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#version">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'GpxTree.version'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Member">
+          <Members>
+           <Member Name="#reference">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Member.reference'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#role">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Member.role'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#type">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Member.type'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Node">
+          <Messages>
+           <Message TypeName="OverrideMethodsOnComparableTypes" Category="Microsoft.Design" CheckId="CA1036" Created="2008-10-22 16:54:55Z">
+            <Issue Name="Equals">
+             <Item>'Node'</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Node'</Item>
+             <Item>!=</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Node'</Item>
+             <Item>&lt;</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Node'</Item>
+             <Item>==</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Node'</Item>
+             <Item>&gt;</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#CompareTo(System.Object)">
+            <Messages>
+             <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Created="2008-10-22 16:54:55Z">
+              <Issue Name="Parameter">
+               <Item>'obj'</Item>
+               <Item>'Node'</Item>
+               <Item>'Node.CompareTo(object)'</Item>
+               <Item>castclass</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Tags">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Node.Tags'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Osm">
+          <Members>
+           <Member Name="#DoGetResponse(System.String,System.String)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'string.Format(string, object, object)'</Item>
+               <Item>'Osm.DoGetResponse(string, string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetRelation(System.Int32)">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'Osm.GetRelation(int)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetWay(System.Int32)">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'Osm.GetWay(int)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="OsmTree">
+          <Members>
+           <Member Name="#Nodes">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'OsmTree.Nodes'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Relations">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'OsmTree.Relations'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Ways">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'OsmTree.Ways'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Relation">
+          <Messages>
+           <Message TypeName="OverrideMethodsOnComparableTypes" Category="Microsoft.Design" CheckId="CA1036" Created="2008-10-22 16:54:55Z">
+            <Issue Name="Equals">
+             <Item>'Relation'</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Relation'</Item>
+             <Item>!=</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Relation'</Item>
+             <Item>&lt;</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Relation'</Item>
+             <Item>==</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Relation'</Item>
+             <Item>&gt;</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#CompareTo(System.Object)">
+            <Messages>
+             <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Created="2008-10-22 16:54:55Z">
+              <Issue Name="Parameter">
+               <Item>'obj'</Item>
+               <Item>'Relation'</Item>
+               <Item>'Relation.CompareTo(object)'</Item>
+               <Item>castclass</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Members">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Relation.Members'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Tags">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Relation.Tags'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Way">
+          <Messages>
+           <Message TypeName="OverrideMethodsOnComparableTypes" Category="Microsoft.Design" CheckId="CA1036" Created="2008-10-22 16:54:55Z">
+            <Issue Name="Equals">
+             <Item>'Way'</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Way'</Item>
+             <Item>!=</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Way'</Item>
+             <Item>&lt;</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Way'</Item>
+             <Item>==</Item>
+            </Issue>
+            <Issue Name="Operator">
+             <Item>'Way'</Item>
+             <Item>&gt;</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#CompareTo(System.Object)">
+            <Messages>
+             <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Created="2008-10-22 16:54:55Z">
+              <Issue Name="Parameter">
+               <Item>'obj'</Item>
+               <Item>'Way'</Item>
+               <Item>'Way.CompareTo(object)'</Item>
+               <Item>castclass</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Nodes">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Way.Nodes'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Tags">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-10-22 16:54:55Z">
+              <Issue>
+               <Item>'Way.Tags'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Rules>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+    <Resolution Name="Parameter">{0}, a parameter, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+    <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+    <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+    <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805">
+    <Resolution Name="Default">{0} initializes field {1} of type {2} to {3}. Remove this initialization because it will be done automatically by the runtime.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045">
+    <Resolution Name="Default">Consider a design that does not require that {0} be a reference parameter.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+    <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="MemberMoreMeaningfulName">Consider providing a more meaningful name than member name {0}.</Resolution>
+    <Resolution Name="MemberParameterMoreMeaningfulName">In method {0}, consider providing a more meaningful name than parameter name {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+    <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   </Rule>
+   <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+    <Resolution Name="Default">Do not nest type {0}. Alternatively, change its accessibility so that it is not externally visible.</Resolution>
+   </Rule>
+   <Rule TypeName="OverrideMethodsOnComparableTypes" Category="Microsoft.Design" CheckId="CA1036">
+    <Resolution Name="Equals">{0} should override Equals since it implements IComparable.</Resolution>
+    <Resolution Name="Operator">{0} should define operator '{1}' since it implements IComparable.</Resolution>
+   </Rule>
+   <Rule TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814">
+    <Resolution Name="Body">{0} uses a multidimensional array of {1}. Replace it with a jagged array if possible.</Resolution>
+   </Rule>
+   <Rule TypeName="PropertiesShouldNotBeWriteOnly" Category="Microsoft.Design" CheckId="CA1044">
+    <Resolution Name="AddGetter">Because property {0} is write-only, either add a property getter with an accessibility that is greater than or equal to its setter or convert this property into a method.</Resolution>
+   </Rule>
+   <Rule TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819">
+    <Resolution Name="Default">Change {0} to return a collection or make it a method.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+    <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+    <Resolution Name="Default">Change {0} to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307">
+    <Resolution Name="Default">{0} makes a call to {1} that does not explicitly provide a StringComparison. This should be replaced with a call to {2}.</Resolution>
+   </Rule>
+   <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+    <Resolution Name="NonBreaking">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054">
+    <Resolution Name="Default">Change the type of parameter {0} of method {1} from string to System.Uri, or provide an overload of {1}, that allows {0} to be passed as a System.Uri object.</Resolution>
+   </Rule>
+   <Rule TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056">
+    <Resolution Name="Default">Change the type of property {0} from string to System.Uri.</Resolution>
+   </Rule>
+   <Rule TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003">
+    <Resolution Name="Default">Remove {0} and replace its usage with EventHandler&lt;T&gt;</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
