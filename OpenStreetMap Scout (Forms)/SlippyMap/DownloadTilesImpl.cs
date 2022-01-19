@@ -397,7 +397,6 @@ namespace OpenStreetMapPictures.TilesDownload {
 
         private String GetFilePathAndCreateDir(DownloadImage di)
         {
-
             String xpath = Utils.GetXPath(di.X, di.Z, renderer);
 
             if (!Directory.Exists(xpath))

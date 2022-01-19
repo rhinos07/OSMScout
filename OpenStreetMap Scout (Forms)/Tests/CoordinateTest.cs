@@ -1,7 +1,7 @@
-﻿namespace OpenSteetMapApi
-{
-    using NUnit.Framework;
+﻿using NUnit.Framework;
 
+namespace OpenSteetMapApi
+{
     /// <summary>
     /// Test the Coordinate class
     /// </summary>

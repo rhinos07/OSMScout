@@ -1,8 +1,8 @@
-﻿namespace OpenSteetMapApi
-{
-    using NUnit.Framework;
-    using OpenStreetMapPictures.TilesDownload;
+﻿using NUnit.Framework;
+using OpenStreetMapPictures.TilesDownload;
 
+namespace OpenSteetMapApi
+{
     /// <summary>
     /// test the calculator class
     /// </summary>
