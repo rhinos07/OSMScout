@@ -1,8 +1,10 @@
 # OSMScout
-OpenStreetMap Scout
 
+## OpenStreetMap Scout
 
-Project Description
+![OpenStreetMap Scout](/OpenStreetMapScoutScreenshot1.png)
+
+## Project Description
 
 OpenStreetMap Client in .Net
 
